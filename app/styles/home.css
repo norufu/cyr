@@ -1,0 +1,45 @@
+main {
+    background-color: rgb(163, 163, 163);
+}
+.flexCenter {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #4b5563;
+    color:white;
+    padding:20px;
+    border-radius: 5px;
+    font-size: 40px;
+    margin:10px;
+}
+
+.studyButton {
+    width:60%;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 60px;
+    padding-top:50px
+}
+
+#buttonWrapper {
+    width:50%;
+}
+#top {
+    width:100%;
+    height:200px;
+    flex-direction: row;
+
+}
+#bottom {
+    width:100%;
+    height:200px;
+}

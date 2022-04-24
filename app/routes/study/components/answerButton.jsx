@@ -1,6 +1,6 @@
-export default function AnswerButton({text, answerHandler}) {
+export default function AnswerButton({text, answerHandler, answer}) {
     return (
-        <button onClick={answerHandler} value={text} className="answerButton">{text}</button>        
+        <button onClick={() => answerHandler(answer)} value={text} className="answerButton">{text}</button>        
     );
   }
   
