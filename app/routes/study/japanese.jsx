@@ -52,6 +52,10 @@ export default function JapaneseStudyPage() {
       fetcher.submit({ language: "japanese" }, { method: "post", action: "./api/questions" })
     }
   }
+  
+  const sidebarHandler = (iconType) => {
+    console.log(iconType);
+  }
 
   const showDetails = (e) => {
     setShowTranslation(!showTranslation);
@@ -59,7 +63,7 @@ export default function JapaneseStudyPage() {
 
   return (
     <div id="studyDiv" className="flex flex-col content-center items-center">
-        {data ? (<StudyInterface quote={data.quotes[qNum]} showTranslation={showTranslation} showDetails={showDetails} answerHandler={answerHandler} correct={correct} incorrect={incorrect}></StudyInterface>) : (null)}
+        {data ? (<StudyInterface quote={data.quotes[qNum]} showTranslation={showTranslation} showDetails={showDetails} answerHandler={answerHandler} sidebarHandler={sidebarHandler} correct={correct} incorrect={incorrect}></StudyInterface>) : (null)}
     </div>
   );
 }
